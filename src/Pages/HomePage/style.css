@@ -39,3 +39,12 @@
     justify-content: space-evenly;
 }
  
+.home-services-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 40px;
+    padding: 0 100px;
+}
+
+

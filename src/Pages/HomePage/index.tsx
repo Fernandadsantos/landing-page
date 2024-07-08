@@ -1,12 +1,16 @@
 import React from "react";
 import Header from "../../Components/header";
-import ilustration from "../../assets/Illustration.svg";
+import illustration from "../../assets/Illustration.svg";
 import companyLogo1 from "../../assets/Company-logo-1.svg";
 import companyLogo2 from "../../assets/Company-logo-2.svg";
 import companyLogo3 from "../../assets/Company-logo-3.svg";
 import companyLogo4 from "../../assets/Company-logo-4.svg";
 import companyLogo5 from "../../assets/Company-logo-5.svg";
 import companyLogo6 from "../../assets/Company-logo-6.svg";
+import illustrationCard1 from "../../assets/illustrationCard-1.svg";
+import illustrationCard2 from "../../assets/illustrationCard-2.svg";
+import TitleBox from "../../Components/titleBox";
+import RedirectCard from "../../Components/redirectCard";
 import "./style.css";
 
 export default function HomePage() {
@@ -24,17 +28,73 @@ export default function HomePage() {
           <button>Book a consultation</button>
         </div>
         <div>
-          <img src={ilustration} alt="ilustration" width={500} />
+          <img src={illustration} alt="Illustration" width={500} />
         </div>
       </section>
       <div className="home-company-logo">
-        <img src={companyLogo1} alt="" />
-        <img src={companyLogo2} alt="" />
-        <img src={companyLogo3} alt="" />
-        <img src={companyLogo4} alt="" />
-        <img src={companyLogo5} alt="" />
-        <img src={companyLogo6} alt="" />
+        <img src={companyLogo6} alt="Amazon" />
+        <img src={companyLogo1} alt="Dribbble" />
+        <img src={companyLogo2} alt="HubSpot" />
+        <img src={companyLogo3} alt="Notion" />
+        <img src={companyLogo4} alt="Netflix" />
+        <img src={companyLogo5} alt="Zoom" />
       </div>
+      <section className="home-services">
+        <TitleBox
+          title="Services"
+          subtitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
+        />
+        <div className="home-services-cards">
+          <RedirectCard
+            titleTop="Search engine"
+            titleBottom="optimization"
+            link="/Search-engine-optimization"
+            theme="gray"
+          >
+            <img src={illustrationCard1} alt="Illustration card" width={170} />
+          </RedirectCard>
+          <RedirectCard
+            titleTop="Social Media"
+            titleBottom="Marketing"
+            link="/Social-Media-Marketing"
+            theme="green"
+          >
+            <img src={illustrationCard2} alt="Illustration card" width={170} />
+          </RedirectCard>
+          <RedirectCard
+            titleTop="Social Media"
+            titleBottom="Marketing"
+            link="/Social-Media-Marketing"
+            theme="dark"
+          >
+            <img src={illustrationCard2} alt="Illustration card" width={170} />
+          </RedirectCard>
+          <RedirectCard
+            titleTop="Search engine"
+            titleBottom="optimization"
+            link="/Search-engine-optimization"
+            theme="gray"
+          >
+            <img src={illustrationCard1} alt="Illustration card" width={170} />
+          </RedirectCard>
+          <RedirectCard
+            titleTop="Search engine"
+            titleBottom="optimization"
+            link="/Search-engine-optimization"
+            theme="green"
+          >
+            <img src={illustrationCard1} alt="Illustration card" width={170} />
+          </RedirectCard>
+          <RedirectCard
+            titleTop="Social Media"
+            titleBottom="Marketing"
+            link="/Social-Media-Marketing"
+            theme="dark"
+          >
+            <img src={illustrationCard2} alt="Illustration card" width={170} />
+          </RedirectCard>
+        </div>
+      </section>
     </div>
   );
 }
