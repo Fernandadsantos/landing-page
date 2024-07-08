@@ -1,0 +1,41 @@
+.header{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Space Grotesk', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-logo{ 
+    width: 180px;
+}
+
+.header-navBar{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-btn{
+    border: 1px solid #191A23;
+    padding: 20px 35px 20px 35px;
+    border-radius: 14px;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif; 
+}
+
+.header-nav-items-list{
+    display: flex;  
+    gap: 40px;
+    list-style-type: none;
+    
+    a{
+        color: #000000;
+        text-decoration: none; 
+    }
+ 
+}
