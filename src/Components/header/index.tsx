@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assest/logo.png";
+import logo from "../../assets/logo.svg";
 import "./style.css";
 
 export default function Header() {
   return (
     <div className="header">
-      <img src={logo} alt="Logo" className="header-logo" />
+      <img src={logo} alt="Logo" />
       <div className="header-navBar">
         <ul className="header-nav-items-list">
           <li>

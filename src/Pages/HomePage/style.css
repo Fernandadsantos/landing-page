@@ -1,0 +1,41 @@
+.home-poster{  
+    padding-top: 60px;
+    height: max-content;
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.home-content-poster{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h2{
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    p{ 
+        font-size: 20px;
+    }
+
+    button{
+        width: 200px; 
+        background-color: #191A23;
+        color: #fff;
+        font-family: 'Space Grotesk', sans-serif; 
+        font-size: 15px;
+        text-align: center;
+        padding: 15px;
+        border: none;
+        border-radius: 12px;
+    }
+}
+
+.home-company-logo{ 
+    display: flex; 
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+ 

@@ -1,17 +1,14 @@
 .header{
     width: 100%;
-    margin-top: 60px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-family: 'Space Grotesk', sans-serif; 
     font-weight: 400;
     font-size: 20px;
 }
-
-.header-logo{ 
-    width: 180px;
-}
+ 
 
 .header-navBar{
     display: flex;
