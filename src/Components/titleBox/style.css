@@ -1,12 +1,12 @@
 .titleBox{
-    padding: 80px 100px 40px 80px;
+    padding: 60px 0;
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.title{
-    width: 178px;
+.title{ 
+    padding: 5px;
     height: 45px;
     background-color: #B9FF66;
     border-radius: 7px;
@@ -16,5 +16,5 @@
 }
 
 .subtitle{
-    width: 580px;
+    width: 510px;
 }

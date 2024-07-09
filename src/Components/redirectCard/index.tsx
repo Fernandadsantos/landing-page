@@ -4,13 +4,8 @@ import icon from "../../assets/link-Icon.svg";
 import "./style.css";
 
 export default function RedirectCard(props: RedirectCardParams) {
-  let backgroundTitle = "";
-  let backgroundCard = "";
-
-  if (props.theme === "gray") {
-  }
   return (
-    <div className="redirect-card grey">
+    <div className="redirect-card">
       <div className="redirect-card-content">
         <div className="redirect-card-text">
           <h2 className="redirect-card-title titleTop" color="#fff">

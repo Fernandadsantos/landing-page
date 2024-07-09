@@ -11,7 +11,10 @@ import illustrationCard1 from "../../assets/illustrationCard-1.svg";
 import illustrationCard2 from "../../assets/illustrationCard-2.svg";
 import TitleBox from "../../Components/titleBox";
 import RedirectCard from "../../Components/redirectCard";
+import faceIllustration from "../../assets/faceIllustration.svg";
 import "./style.css";
+import Card from "../../Components/card";
+import CardInformation from "../../Components/cardInformation";
 
 export default function HomePage() {
   return (
@@ -94,6 +97,17 @@ export default function HomePage() {
             <img src={illustrationCard2} alt="Illustration card" width={170} />
           </RedirectCard>
         </div>
+        <Card
+          buttonContent="Get your free proposal"
+          title="Let’s make things happen"
+          paragraph="Contact us today to learn more about how our digital marketing services can help your business grow and succeed online."
+        >
+          <img src={faceIllustration} alt="illustration card" />
+        </Card>
+        <TitleBox
+          title="Case Studies"
+          subtitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+        />
       </section>
     </div>
   );

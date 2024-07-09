@@ -10,3 +10,10 @@ export interface RedirectCardParams {
   link: string;
   theme: string;
 }
+
+export interface CardParams {
+  title: string;
+  paragraph: string;
+  buttonContent: string;
+  children: React.ReactNode;
+}
