@@ -1,11 +1,14 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
 import "./style.css";
+import ButtonModel from "../button";
 
 export default function Header() {
   return (
     <div className="header">
-      <img src={logo} alt="Logo" />
+      <a href="/">
+        <img src={logo} alt="Logo" />
+      </a>
       <div className="header-navBar">
         <ul className="header-nav-items-list">
           <li>
@@ -24,7 +27,12 @@ export default function Header() {
             <a href="/Blog">Blog</a>
           </li>
         </ul>
-        <button className="header-btn">Request a quote</button>
+        <ButtonModel
+          content={"Request a quote"}
+          backgroundColor="#fff"
+          color="#191a23"
+          className="header-btn"
+        />
       </div>
     </div>
   );

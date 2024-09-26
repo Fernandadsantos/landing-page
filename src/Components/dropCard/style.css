@@ -1,0 +1,101 @@
+.dropCard-container{
+    margin: 0;
+    padding: 0;
+}
+
+.dropCard-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    box-sizing: border-box;
+    padding: 0 70px;
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    border: 1px solid #000;
+    box-shadow: 0px 7px 0px 0px rgb(0, 0, 0);   
+}
+
+.dropCard-card{  
+    width: 100%; 
+    height: 160px;
+    border: none; 
+    border-radius: 34px;
+    background-color: #F3F3F3;
+    margin: 40px 0 30px 0; 
+    font-size: 18px;
+    font-weight: 400; 
+    text-align: left; 
+    transition:  0.4s ease ;
+}
+
+.dropCard-card-toggle{
+    background-color: #B9FF66;
+    border-radius: 45px;
+    height: 280px;
+    transition:  0.4s ease ;
+}
+
+.dropCard-title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
+
+.dropCard-title-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.drop-btn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;    
+}
+
+.toggle-label{
+    display: none;
+}
+
+.show{
+    display:block;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.horizontal{
+    width: 25px;
+    height: 7px;
+    background-color: #000;
+    margin: auto;  
+}
+
+.vertical{
+    height: 25px;
+    width: 7px;
+    background-color: #000;
+    margin: auto; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+}

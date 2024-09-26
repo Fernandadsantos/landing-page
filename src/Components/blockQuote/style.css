@@ -1,0 +1,47 @@
+.blockQuote-container{
+    max-width: 600px;
+    margin: auto;
+    transition: 0.5s ease, 0.5s ease;  
+}
+
+.blockQuote-content{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+
+}
+
+blockquote{   
+    width: 100%;
+    height: 206px; 
+    font-size: 1.2em;  
+    background-color: #191A23; 
+    overflow: scroll;  
+    position: absolute;
+    top: 30px;  
+    border-radius: 30px;
+    left: 0.2%;  
+    line-height: 29px;  
+     
+}
+
+.blockQuote-details{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 20px 40px;
+  }
+   
+  .blockQuote-author {
+    font-weight: 500;
+    color: #B9FF66;  
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  
+  .blockQuote-title {
+    font-size: 20px;
+    color: #fff;
+  }
+ 
+ 

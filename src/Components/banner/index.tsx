@@ -1,17 +1,16 @@
 import React from "react";
 import { CardParams } from "../../interfaces";
 import "./style.css";
-import ButtonModel from "../button";
+import RedirectCard from "../redirectCard";
 
-export default function Card(props: CardParams) {
+export default function Banner(props: CardParams) {
   return (
-    <div className="card">
-      <div className="card-content">
+    <div className="banner">
+      <div className="banner-content">
         <div className="card-text">
-          <h2 className="card-title">{props.title}</h2>
           <p className="card-paragraph">{props.paragraph}</p>
         </div>
-        <ButtonModel content={props.buttonContent} />
+        <div></div>
       </div>
       {props.children ?? <div></div>}
     </div>

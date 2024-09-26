@@ -5,7 +5,7 @@ import "./style.css";
 
 export default function RedirectCard(props: RedirectCardParams) {
   return (
-    <div className="redirect-card">
+    <div className={`redirect-card  ${props.theme}`}>
       <div className="redirect-card-content">
         <div className="redirect-card-text">
           <h2 className="redirect-card-title titleTop" color="#fff">
