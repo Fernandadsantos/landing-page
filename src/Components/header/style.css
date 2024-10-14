@@ -17,7 +17,7 @@
 
 .header-btn{
     border: 1px solid #191A23;
-    padding: 20px 35px 20px 35px;
+    padding: 20px 35px ;
     border-radius: 14px;
     background-color: #fff;
     font-size: 18px;
@@ -39,4 +39,28 @@
         text-decoration: none; 
     }
  
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header{ 
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 17px;
+        
+    }
+     
+    .header-btn{
+        padding: 10px 25px; 
+        text-align: center;
+        border-radius: 14px;
+        background-color: #fff;
+        font-size: 16px;
+        font-family: 'Space Grotesk', sans-serif; 
+        cursor: pointer;
+        border: 1px solid #191A23;
+    }
 }

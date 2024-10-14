@@ -1,13 +1,14 @@
 .homePage{
     margin: auto; 
     max-width: 1800px;
+    position: relative;
 }
 .home-poster{  
     padding-top: 60px;
     height: max-content;
     display: flex; 
     justify-content: space-around; 
-}
+} 
 
 .home-content-poster{
     width: 500px;
@@ -23,23 +24,7 @@
     p{ 
         font-size: 20px;
     }
-
-    button{
-        width: 200px; 
-        background-color: #191A23;
-        color: #fff;
-        font-family: 'Space Grotesk', sans-serif; 
-        font-size: 15px;
-        text-align: center;
-        padding: 15px;
-        border: none;
-        border-radius: 12px;
-        cursor: pointer;
-    }
-
-    button:active{ 
-        color: #9e9e9e; 
-    }
+  
 }
 
 .home-company-logo{   
@@ -55,8 +40,7 @@
     font-size: 18px; 
 }
  
-.home-services-cards{
-    padding: 40px 0;
+.home-services-cards{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -67,12 +51,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 70px;
+    padding: 50px;
     font-size: 18px; 
 }
 
 .text-banner-content{
-    font-weight: 400;
+    font-weight: 400; 
 }
  
 .drop-cards-section{
@@ -92,20 +76,55 @@
     display: flex;
     justify-content: flex-end;
     padding: 40px 0 0 0;
-}
+} 
 
-.all-team-btn{
-    background-color: #191A23;
-    color: #fff;
-    width: 270px ;
-    height: 68px;
-    border-radius: 14px;
-    padding: 20px 35px ;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .home-poster{    
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;  
+        position: relative;
+    }
 
-.all-team-btn:active{
-    color: #9e9e9e; 
+    .home-content-poster{ 
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        text-align: center;
+        width: 650px;
+
+    }
+  
+    .illustration-home{
+        margin-top: 50px;
+    }
+
+    .home-company-logo{ 
+        margin: 0 50px; 
+        flex-wrap: wrap; 
+        gap: 10px 70px;
+    }
+
+    .home-title-section{
+        padding: 30px 40px 0 40px;
+    }
+    
+    .CardModel{
+        flex-direction: column;
+    }
+
+    .text-banner{   
+        gap:  0px;
+        padding: 70px 70px 40px 70px;
+        font-size: 18px; 
+    }
+     
+    .all-team{
+        display: flex;
+        justify-content: center; 
+    }
+
+    .carousel-adapter{
+        padding: 0 70px 0 0;
+    }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../Components/header";
 import illustration from "../../assets/Illustration.svg";
 import companyLogo1 from "../../assets/Company-logo-1.svg";
@@ -30,6 +30,9 @@ import ButtonModel from "../../Components/button";
 import "./style.css";
 
 export default function HomePage() {
+  const { innerWidth: width } = window;
+  const [widthDivider, setWidthDivider] = useState(true);
+
   const carouselData: CarouselData[] = [
     {
       quote:
@@ -50,10 +53,18 @@ export default function HomePage() {
       title: "CEO",
     },
   ];
+
+  useEffect(() => {
+    if (width >= 768 && width <= 1199) {
+      setWidthDivider(false);
+    }
+    setWidthDivider(true);
+  }, []);
+
   return (
-    <div className="homePage">
+    <div className="homePage" id="homePage">
       <Header />
-      <section className="home-poster">
+      <section className="home-poster" id="aboutUs">
         <div className="home-content-poster">
           <h2>Navigating the digital landscape for success</h2>
           <p>
@@ -61,10 +72,19 @@ export default function HomePage() {
             online through a range of services including SEO, PPC, social media
             marketing, and content creation.
           </p>
-          <ButtonModel content={"Book a consultation"} />
+          <ButtonModel
+            content={"Book a consultation"}
+            width="240px"
+            height="50px"
+          />
         </div>
         <div>
-          <img src={illustration} alt="Illustration" width={500} />
+          <img
+            src={illustration}
+            alt="Illustration"
+            width={600}
+            className="illustration-home"
+          />
         </div>
       </section>
       <div className="home-company-logo">
@@ -75,7 +95,7 @@ export default function HomePage() {
         <img src={companyLogo4} alt="Netflix" />
         <img src={companyLogo5} alt="Zoom" />
       </div>
-      <section className="home-title-section">
+      <section className="home-title-section" id="services">
         <TitleBox
           title="Services"
           subtitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
@@ -138,7 +158,7 @@ export default function HomePage() {
           <img src={faceIllustration} alt="illustration card" />
         </Card>
       </section>
-      <section className="home-title-section ">
+      <section className="home-title-section " id="useCases">
         <TitleBox
           title="Case Studies"
           subtitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
@@ -152,7 +172,7 @@ export default function HomePage() {
             </h3>
             <Redirect path="#" color="#B9FF66" />
           </div>
-          <Divider width={"0"} height={"150px"} color={"#FFFFFF"} />
+          <Divider rotate={widthDivider} color={"#FFFFFF"} />
           <div className="text-banner">
             <h3 className="text-banner-content">
               For a B2B software company, we developed an SEO strategy that
@@ -161,7 +181,7 @@ export default function HomePage() {
             </h3>
             <Redirect path="#" color="#B9FF66" />
           </div>
-          <Divider width={"0"} height={"150px"} color={"#fff"} />
+          <Divider rotate={widthDivider} color={"#fff"} />
           <div className="text-banner">
             <h3 className="text-banner-content">
               For a national retail chain, we created a social media marketing
@@ -172,7 +192,7 @@ export default function HomePage() {
           </div>
         </CardModel>
       </section>
-      <section className="home-title-section">
+      <section className="home-title-section" id="pricing">
         <TitleBox
           title=" Our Working Process "
           subtitle="Step-by-Step Guide to Achieving Your Business Goals"
@@ -222,7 +242,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <section className="home-title-section">
+      <section className="home-title-section" id="aboutUs">
         <TitleBox
           title={"Team"}
           subtitle={
@@ -282,7 +302,7 @@ export default function HomePage() {
           />
         </div>
         <div className="all-team">
-          <ButtonModel content="See all team" width="269px" />
+          <ButtonModel content="See all team" width="269px" height="50px" />
         </div>
       </section>
       <section className="home-title-section">
@@ -292,16 +312,18 @@ export default function HomePage() {
             "Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
           }
         />
-        <Carousel data={carouselData}></Carousel>
+        <div className="carousel-adapter">
+          <Carousel data={carouselData}></Carousel>
+        </div>
       </section>
-      <section className="home-title-section">
+      <section className="home-title-section" id="blog">
         <TitleBox
           title={"Contact Us"}
           subtitle={
             "Connect with Us: Let's Discuss Your Digital Marketing Needs"
           }
         />
-        <FormComponent></FormComponent>
+        <FormComponent />
       </section>
       <Footer />
     </div>

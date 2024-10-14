@@ -1,5 +1,5 @@
 .blockQuote-container{
-    max-width: 600px;
+    max-width: 550px;
     margin: auto;
     transition: 0.5s ease, 0.5s ease;  
 }
@@ -18,8 +18,7 @@ blockquote{
     background-color: #191A23; 
     overflow: scroll;  
     position: absolute;
-    top: 30px;  
-    border-radius: 30px;
+    top: 20px;   
     left: 0.2%;  
     line-height: 29px;  
      
@@ -43,5 +42,19 @@ blockquote{
     font-size: 20px;
     color: #fff;
   }
+
+  blockquote-img{
+    width: 700px;
+  }
  
- 
+  @media (min-width: 768px) and (max-width: 1199px) {
+    blockquote{
+      width: 490px; 
+      font-size: 19px;
+      margin-left: 30px; 
+    }
+
+    blockquote-img{
+      width: 670px;
+    }
+  }

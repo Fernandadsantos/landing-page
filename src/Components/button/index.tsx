@@ -4,7 +4,7 @@ import "./style.css";
 
 export default function ButtonModel(props: BtnProps) {
   return (
-    <div
+    <button
       className={` ${props.className ? props.className : "btn"} `}
       style={{
         backgroundColor: ` ${props.backgroundColor}`,
@@ -15,6 +15,6 @@ export default function ButtonModel(props: BtnProps) {
       }}
     >
       {props.content}
-    </div>
+    </button>
   );
 }

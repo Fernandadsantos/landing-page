@@ -12,19 +12,19 @@ export default function Header() {
       <div className="header-navBar">
         <ul className="header-nav-items-list">
           <li>
-            <a href="/AboutUs">About us</a>
+            <a href="#aboutUs">About us</a>
           </li>
           <li>
-            <a href="/Services">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="/UseCases">Use Cases</a>
+            <a href="#useCases">Use Cases</a>
           </li>
           <li>
-            <a href="/Pricing">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li>
-            <a href="/Blog">Blog</a>
+            <a href="#blog">Blog</a>
           </li>
         </ul>
         <ButtonModel

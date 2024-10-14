@@ -33,7 +33,7 @@ export default function DropCard(props: DropCardParams) {
             </button>
           </div>
           <div className={`toggle-label ${isOpen ? "show" : ""}`}>
-            <Divider width={"100%"} height={"0"} color={"#9e9e9e"} />
+            <Divider rotate={false} color={"#9e9e9e"} />
             <p>{props.content}</p>
           </div>
         </div>

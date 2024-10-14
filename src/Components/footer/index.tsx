@@ -9,6 +9,7 @@ import CardModel from "../cardModel";
 import ButtonModel from "../button";
 
 export default function Footer() {
+  const { innerWidth: width } = window;
   return (
     <div className="footer">
       <div className="footer-links">
@@ -18,19 +19,19 @@ export default function Footer() {
         <div className="footer-navBar">
           <ul className="footer-nav-items-list">
             <li>
-              <a href="/AboutUs">About us</a>
+              <a href="#aboutUs">About us</a>
             </li>
             <li>
-              <a href="/Services">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="/UseCases">Use Cases</a>
+              <a href="#useCases">Use Cases</a>
             </li>
             <li>
-              <a href="/Pricing">Pricing</a>
+              <a href="#pricing">Pricing</a>
             </li>
             <li>
-              <a href="/Blog">Blog</a>
+              <a href="#blog">Blog</a>
             </li>
           </ul>
         </div>
@@ -58,8 +59,8 @@ export default function Footer() {
         <CardModel
           color={"#fff"}
           backgroundColor={"#292A32"}
-          width={"634px"}
-          height={"184px"}
+          width={width <= 768 ? "564px" : "554px"}
+          height={width <= 768 ? "144px" : "154px"}
           radius="10px"
         >
           <div className="footer-content-card">
@@ -73,7 +74,9 @@ export default function Footer() {
           </div>
         </CardModel>
       </div>
-      <Divider width={"89%"} height={"0"} color={"#9e9e9e"} />
+      <div className="divider-footer-Container">
+        <Divider rotate={false} color={"#9e9e9e"} />
+      </div>
       <div className="footer-credits">
         <p>© 2023 Positivus. All Rights Reserved.</p>
         <a href="">Privacy Policy</a>

@@ -23,14 +23,14 @@ export default function FormComponent() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-
-    console.log(formData);
   };
 
+  const { innerWidth: width } = window;
+
   return (
-    <CardModel height="773px" width="100%">
+    <CardModel height={width <= 768 ? "600px" : "773px"} width="100%">
       <div className="form">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="form-container">
           <div className="form-radio">
             <label>
               <input
@@ -99,8 +99,8 @@ export default function FormComponent() {
             <div className="btn-submit">
               <ButtonModel
                 content={"Send Message"}
-                height="30px"
-                width="490px"
+                height="40px"
+                width="560px"
               />
             </div>
           </div>

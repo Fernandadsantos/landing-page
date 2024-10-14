@@ -5,7 +5,7 @@
     padding: 0 0 0 120px;
     overflow: hidden;
     height: 630px;
-    position: relative;
+    position: relative; 
 }
  
 .form-radio{ 
@@ -81,7 +81,7 @@ label{
 }
 
 .btn-submit{
-    margin-top: 25px; 
+    margin-top: 20px; 
 }
 
 .img-form{
@@ -91,3 +91,33 @@ label{
     width: 691px; 
 }
  
+@media (min-width: 768px) and (max-width: 1389px){
+    .img-form{
+        display: none;
+    }
+
+    .form-container{
+        padding: 20px 0 50px 0; 
+    }
+
+    .btn-submit{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form{ 
+        margin: auto;  
+        padding: 0;
+        width: fit-content;  
+    }
+}
+
+@media (min-width: 1390px) {
+    .img-form{
+        display:inline;
+    } 
+
+    .form{  
+        padding: 0 0 0 120px;  
+    }
+}

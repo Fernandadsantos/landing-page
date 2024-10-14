@@ -8,7 +8,7 @@ export default function BlockQuoteModel(props: BlockQuote) {
     <div className="blockQuote-container">
       <div className="blockQuote-content">
         <div>
-          <img src={box} alt="box" width={700} />
+          <img className="blockquote-img" src={box} alt="box" />
           <blockquote>"{props.quote}"</blockquote>
         </div>
       </div>

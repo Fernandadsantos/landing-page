@@ -1,3 +1,18 @@
 .divider{ 
-    width: 100%;
+    width: 80%;  
+}
+
+.rotate{
+    transform: rotate(90deg); 
+}
+ 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .divider{ 
+        height: 0;
+        width: 50%; 
+    }
+
+    .rotate{ 
+        transform: rotate(180deg);
+    }
 }

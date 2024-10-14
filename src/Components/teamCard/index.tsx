@@ -21,7 +21,7 @@ export default function TeamCard(props: TeamCardParams) {
           </div>
           <img src={linkedin} alt="" className="linkedin" />
         </div>
-        <Divider width={"100%"} height={"0"} color={"#9e9e9e"} />
+        <Divider rotate={false} color={"#9e9e9e"} />
         <p className="team-member-description">{props.description}</p>
       </div>
     </CardModel>
