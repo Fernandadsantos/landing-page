@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.b08552f5.css",
+    "main.js": "/landing-page/static/js/main.9309567b.js",
+    "static/js/453.7ee4257d.chunk.js": "/landing-page/static/js/453.7ee4257d.chunk.js",
+    "static/media/png": "/landing-page/static/media/9bd2d37e31683484f8df8c866af21435.0a85847081e163929553.png",
+    "static/media/Illustration.svg": "/landing-page/static/media/Illustration.4607f54d94549be3e29cb9e8fac5fb0a.svg",
+    "static/media/illustrationCard-2.svg": "/landing-page/static/media/illustrationCard-2.0133d75550cc0017601cb61ee22f154f.svg",
+    "static/media/instagram.png": "/landing-page/static/media/instagram.cec5736859c50a5a0dc7.png",
+    "static/media/google-play.png": "/landing-page/static/media/google-play.a648948d37cae7a0021c.png",
+    "static/media/Picture(q).png": "/landing-page/static/media/Picture(q).c3ce7960249b43484a7d.png",
+    "static/media/Picture(1).png": "/landing-page/static/media/Picture(1).851832fe2ccbbf40d06c.png",
+    "static/media/Picture.png": "/landing-page/static/media/Picture.8ab14f52fcb57f5302bd.png",
+    "static/media/linkedin.png": "/landing-page/static/media/linkedin.793a76008e86eb4e8160.png",
+    "static/media/facebook.png": "/landing-page/static/media/facebook.9a6e212e214e7aef33e5.png",
+    "static/media/illustrationCard-1.svg": "/landing-page/static/media/illustrationCard-1.87b5e7d8cfb5573dce3e7d07e51e75f6.svg",
+    "static/media/Company-logo-6.svg": "/landing-page/static/media/Company-logo-6.35443645ec8f47000bf189451803bb96.svg",
+    "static/media/logo.svg": "/landing-page/static/media/logo.7471fd0e7819ba8e8c58518c0d7f9bd8.svg",
+    "static/media/logoStar.svg": "/landing-page/static/media/logoStar.c2e7403d228d3a0c73e26832918b9665.svg",
+    "static/media/Company-logo-2.svg": "/landing-page/static/media/Company-logo-2.42ec659bb8d9d869dba158f0793011f8.svg",
+    "static/media/Company-logo-1.svg": "/landing-page/static/media/Company-logo-1.7b01f6dfc634ff1c3e9ca148b549cd3f.svg",
+    "static/media/IllustrationForm.svg": "/landing-page/static/media/IllustrationForm.6f010c0e6e40a637185e03a642963881.svg",
+    "static/media/Company-logo-5.svg": "/landing-page/static/media/Company-logo-5.c47f0feb50cf056c29e26bee51ce3998.svg",
+    "static/media/Company-logo-3.svg": "/landing-page/static/media/Company-logo-3.635bee0ad469faedb4a24bb80d5f6118.svg",
+    "static/media/faceIllustration.svg": "/landing-page/static/media/faceIllustration.4c73b3c798b287d2a08decf967c2df09.svg",
+    "static/media/Company-logo-4.svg": "/landing-page/static/media/Company-logo-4.7572b5fe2fbabc88cd25b257a8bddee4.svg",
+    "index.html": "/landing-page/index.html",
+    "static/media/link-Icon.svg": "/landing-page/static/media/link-Icon.656e9586613057c454613b815297c47e.svg",
+    "main.b08552f5.css.map": "/landing-page/static/css/main.b08552f5.css.map",
+    "main.9309567b.js.map": "/landing-page/static/js/main.9309567b.js.map",
+    "453.7ee4257d.chunk.js.map": "/landing-page/static/js/453.7ee4257d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b08552f5.css",
+    "static/js/main.9309567b.js"
+  ]
+}
